@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div>
+		<div>
+			<h1 style="font-family: arial;">Куда бы ты хотел поехать на выходных?</h1>
+		</div>
+		<div>
+			<textarea style="width: 500px;" class="text"></textarea>
+		</div>
+		<div>
+			<button class="btn">Поехали</button>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d119755.76325165165!2d129.56170621393048!3d62.031262571311345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5bf63939a0d2c47d%3A0x69b4c4b35cafa2fb!2z0K_QutGD0YLRgdC6LCDQoNC10YHQvy4g0KHQsNGF0LAgKNCv0LrRg9GC0LjRjyk!5e0!3m2!1sru!2sru!4v1618302151418!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" class="ifrm"></iframe>
+		</div>
+	</div>
+	<script type="text/javascript">
+		let btn = document.querySelector('.btn');
+		let iframe = document.querySelector('.ifrm');
+		let text = document.querySelector('.text');
+
+		btn.onclick = function(){
+			let newsrc = text.value;
+			iframe.src = newsrc;
+		}
+	</script>
+</body>
+</html>
